@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "AIE Summit",
+    "slug": "aie-mobile",
+    "scheme": "aie-mobile",
+    "version": "1.10.0",
+    "owner": "kodefox",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "engineer.ai.app",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "engineer.ai.app",
+      "versionCode": 2
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-updates",
+        {
+          "username": "kodefox"
+        }
+      ]
+    ],
+    "extra": {
+      "productionApiHost": "https://www.ai.engineer",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "830c8a76-79be-4156-babe-c2a5007b0521"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/830c8a76-79be-4156-babe-c2a5007b0521"
+    }
+  }
+}
